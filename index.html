@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <title></title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <button id="btn-menu" class="btn-menu">
+        <img id="img-btn-menu" src="images/icon-hamburger.svg" alt="" />
+      </button>
+      <a class="logo" href="#">room</a>
+
+      <nav id="menu">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="col-md-7">
+        <img id="carrossel" src="images/desktop-image-hero-1.jpg" alt="" />
+        <div class="squares">
+          <div class="square" onclick="previous()">
+            <img src="images/icon-angle-left.svg" alt="" />
+          </div>
+          <div class="square" onclick="next()">
+            <img src="images/icon-angle-right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h2 id="title" class="title">
+          Discover innovative <br />
+          ways to decorate
+        </h2>
+        <p id="paragraph">
+          We provide unmatched quality, comfort, and style for property owners
+          across the country. Our experts combine form and function in bringing
+          your vision to life. Create a room in your own style with our
+          collection and make your property a reflection of you and what you
+          love.
+        </p>
+        <h3>shop now <img src="images/icon-arrow.svg" alt="" /></h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <img src="images/image-about-dark.jpg" alt="" />
+      </div>
+      <div class="col-md-6">
+        <h2 class="secundary-title">About our furniture</h2>
+
+        <p class="text">
+          Our multifunctional collection blends design andf unction to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </div>
+
+      <div class="col-md-3">
+        <img src="images/image-about-light.jpg" alt="" />
+      </div>
+    </div>
+    <div id="block"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
